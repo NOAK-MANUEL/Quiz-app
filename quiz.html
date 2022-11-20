@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./quiz.css">
+  <title>Quiz App</title>
+</head>
+<body>
+  <div class="container">
+    <button class="begin">Begin</button>
+    <h2 class="m-head">Welcome to our game. <br> Hope you are ready to test your brain capacity</h2>
+    <h4 class="p-head">Please you are advice to read and follow the terms and conditions</h4>
+    <div class="info-container search">
+      <p class="p">1: In this game you will have <span>Four</span> Options</p>
+      <p>2:<span> Five</span> Questions</p>
+      <p>3: And <span>Ten </span>Seconds to answer each question.</p>
+      <p>4: Therefore you have less than <span> One</span> Minute to answer all questions</p>
+      <small>Hope our terms and condition are suitable to you <input type="checkbox" class="check"></small>
+      <br><br>
+      <button onclick="unquit()">Quit</button> <button class="continue" onclick="next()">Continue</button>
+    </div>
+
+    <div class="question-1">
+      <input type="number" value="10" class="time">
+      <h3>What is a web developer purpose</h3>
+      <p>A: For stating laws <input type="checkbox" onclick="result()" class="wrong1"></p>
+      <p>B: Too flex <input type="checkbox" class="wrong2" onclick="result()"></p>
+      <p>C: To create a more Global and easier path in life <input type="checkbox" onclick="result()" class="correct"></p>
+      <p>D: Just for fun <input type="checkbox" onclick="result()" class="wrong3"></p>
+      <br><br>
+      <button onclick="unquit()">Quit</button> <button class="continue" onclick="next()">Continue</button>
+    </div>
+
+    <div class="question-2">
+      <input type="number" value="10" class="time">
+      <h3>What progamming language is best for website</h3>
+      <p>A: Python <input type="checkbox" onclick="result()" class="wrong2"></p>
+      <p>B: Java <input type="checkbox" onclick="result()"  class="wrong1"></p>
+      <p>C: JavaScript <input type="checkbox" onclick="result()" class="correct"></p>
+      <p>D: CSS<input type="checkbox" onclick="result()" class="wrong3"></p>
+      <br><br>
+      <button onclick="unquit()">Quit</button> <button class="continue" onclick="next()">Continue</button>
+    </div>
+
+    <div class="question-3">
+      <input type="number" value="10" class="time">
+      <h4>What progamming language is best suited for security purpose</h4>
+      <p>A: Python <input type="checkbox" onclick="result()" class="wrong2"></p>
+      <p>B: Java <input type="checkbox" onclick="result()"  class="correct"></p>
+      <p>C: PHP<input type="checkbox" onclick="result()" class="wrong3"></p>
+      <p>D: JavaScript <input type="checkbox" onclick="result()" class="wrong1"></p>
+      <br><br>
+      <button onclick="unquit()">Quit</button> <button class="continue" onclick="next()">Continue</button>
+    </div>
+    <div class="question-4">
+      <input type="number" value="10" class="time">
+      <h4>Each are well suited for front-end programming except</h4>
+      <p>A: JavaScript <input type="checkbox" onclick="result()" class="wrong1"></p>
+      <p>B: Python <input type="checkbox" onclick="result()" class="wrong2"></p>
+      <p>C: C++<input type="checkbox" onclick="result()" class="wrong3"></p>
+      <p>D: Java <input type="checkbox" onclick="result()"  class="correct"></p>
+      <br><br>
+      <button onclick="unquit()">Quit</button> <button class="continue" onclick="next()">Continue</button>
+    </div>
+
+    <div class="question-5">
+      <input type="number" value="10" class="time">
+      <h4>Each are well suited for storage</h4>
+      <p>A: PHP <input type="checkbox" onclick="result()" class="wrong2"></p>
+      <p>B: MongoDB<input type="checkbox" onclick="result()"  class="wrong3"></p>
+      <p>C: Python<input type="checkbox" onclick="result()" class="correct"></p>
+      <p>D: SSS <input type="checkbox" onclick="result()" class="wrong1"></p>
+      <br><br>
+      <button onclick="unquit()">Quit</button> <button class="continue" onclick="next()">Continue</button>
+    </div>
+
+    <div class="finish">
+      <h3>Nicely done! you finished each question before the time elapsed</h3>
+      <p class="p-score">You have the total score of <span class="score"></span> out of five</p>
+      <p>Hope had fun and learnt something</p>
+      <small>Do you wish to play again <button onclick="unquit()">Yes</button></small>
+    </div>
+  </div>
+
+  <audio src="./Mouse-Click-00-c-FesliyanStudios.com.mp3" class="mouse"></audio>
+  <script src="quiz.js"></script>
+</body>
+</html>
